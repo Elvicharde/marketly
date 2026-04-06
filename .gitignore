@@ -46,7 +46,7 @@ CLAUDE.md
 AGENTS.md
 
 # local config
-package.lock.json
+package-lock.json
 yarn.lock
 
 # gitinore
