@@ -4,11 +4,10 @@ export default function Main({ children }: { children: React.ReactNode }) {
     backgroundRepeat: "repeat",
   };
   return (
-    <main
-      className="flex flex-col flex-1 max-w-360 mx-auto px-6 relative z-10 w-full py-8"
-      style={backgroundStyle}
-    >
-      {children}
+    <main className="flex flex-col flex-1 w-full" style={backgroundStyle}>
+      <section className="flex flex-col flex-1 max-w-360 mx-auto px-6 relative z-10 w-full py-8">
+        {children}
+      </section>
     </main>
   );
 }
