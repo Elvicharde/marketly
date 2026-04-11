@@ -1,4 +1,6 @@
-export const PRODUCTS = [
+import { IProduct } from "@/types/product";
+
+export const PRODUCTS: IProduct[] = [
   {
     id: "1",
     name: "Aura Studio Pro",
@@ -6,11 +8,14 @@ export const PRODUCTS = [
     price: 499.0,
     rating: 4.8,
     reviews: 124,
-    image: "/images/products/aura-studio.jpg", // Replace with your actual paths
+    image:
+      "https://storage.googleapis.com/uxpilot-auth.appspot.com/c18a32cf3c-480fa281c7cbf23efcd5.png", // Replace with your actual paths
     status: "In Stock",
     description:
       "High-fidelity wireless speaker with ambient lighting and 360-degree sound.",
     color: "Midnight Black",
+    isNew: true,
+    sale_discount: 0,
   },
   {
     id: "2",
@@ -19,24 +24,30 @@ export const PRODUCTS = [
     price: 299.0,
     rating: 4.9,
     reviews: 89,
-    image: "/images/products/zenith-headphones.jpg",
+    image:
+      "https://storage.googleapis.com/uxpilot-auth.appspot.com/f78c1dc6ce-8eed18c26e7a3633778b.png",
     status: "In Stock",
     description:
       "Next-generation active noise cancellation with 40-hour battery life.",
     color: "Silver Birch",
+    isNew: false,
+    sale_discount: 0,
   },
   {
     id: "3",
-    name: "Vantage Smart Watch",
+    name: "Nova True Wireless Earbuds",
     category: "Wearables",
-    price: 349.5,
-    rating: 4.5,
+    price: 119.0,
+    rating: 4.8,
     reviews: 210,
-    image: "/images/products/vantage-watch.jpg",
+    image:
+      "https://storage.googleapis.com/uxpilot-auth.appspot.com/6fc47f59a2-615a3a0457386c4043e3.png",
     status: "Out of Stock",
     description:
-      "Titanium casing with advanced health tracking and sapphire glass.",
-    color: "Slate Grey",
+      "Compact design with spatial audio support and water resistance for active lifestyles.",
+    color: "White",
+    isNew: false,
+    sale_discount: 20,
   },
   {
     id: "4",
@@ -45,11 +56,13 @@ export const PRODUCTS = [
     price: 120.0,
     rating: 4.7,
     reviews: 45,
-    image: "/images/products/luminal-lamp.jpg",
+    image: "/assets/icons/product-icon.svg",
     status: "In Stock",
     description:
       "Minimalist LED task light with adjustable color temperature and wireless charging.",
     color: "Matte White",
+    isNew: false,
+    sale_discount: 0,
   },
   {
     id: "5",
@@ -58,23 +71,28 @@ export const PRODUCTS = [
     price: 1799.0,
     rating: 4.6,
     reviews: 67,
-    image: "/images/products/pixel-fold.jpg",
+    image: "/assets/icons/product-icon.svg",
     status: "In Stock",
     description: "Ultra-slim foldable display with pro-grade camera system.",
     color: "Obsidian",
+    isNew: false,
+    sale_discount: 0,
   },
   {
     id: "6",
-    name: "Sonic Key mechanical",
+    name: "Analog Horizon Turntable",
     category: "Accessories",
-    price: 159.0,
+    price: 349.0,
     rating: 4.9,
     reviews: 312,
-    image: "/images/products/keyboard.jpg",
+    image:
+      "https://storage.googleapis.com/uxpilot-auth.appspot.com/5e6d9b2887-7d98acbce765ca13919c.png",
     status: "In Stock",
     description:
-      "Compact 65% wireless mechanical keyboard with hot-swappable switches.",
-    color: "Arctic Blue",
+      "Belt-drive turntable with built-in preamp and Bluetooth connectivity in a walnut finish.",
+    color: "Walnut",
+    isNew: false,
+    sale_discount: 35,
   },
 ];
 

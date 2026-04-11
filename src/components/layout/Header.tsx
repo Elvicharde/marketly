@@ -3,7 +3,7 @@ import { toTitleCase } from "@/lib/utils";
 
 export default function Header() {
   return (
-    <header className="sticky top-0 w-full z-50 glass-panel border-b border-slate-200/50">
+    <header className="sticky top-0 w-full z-50 glass-panel border-b border-slate-200/50 bg-white">
       <div className="max-w-360 mx-auto px-6 h-20 flex items-center justify-between">
         <div className="flex items-center gap-3">
           <Logo brandName="Marketly" />
