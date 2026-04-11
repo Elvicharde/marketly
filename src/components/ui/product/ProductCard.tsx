@@ -8,13 +8,22 @@ interface IProductCardProps {
 export default function ProductCard({ product }: IProductCardProps) {
   return (
     <div className="group bg-white rounded-2xl border border-slate-200 overflow-hidden hover:shadow-[0_12px_30px_rgb(0,0,0,0.08)] hover:border-slate-300 transition-all duration-300 flex flex-col relative">
-      {product.isNew && (
-        <div className="absolute top-3 left-3 z-10 flex flex-col gap-2">
-          <span className="bg-slate-900 text-white text-[10px] font-bold px-2 py-1 rounded-sm uppercase tracking-wide">
-            New
-          </span>
-        </div>
-      )}
+      <div className="flex items-center justify-center gap-2 top-3 left-3 absolute z-10 ">
+        {product.isNew && (
+          <div className="flex flex-col gap-2">
+            <span className="bg-slate-900 text-white text-[10px] font-bold px-2 py-1 rounded-sm uppercase tracking-wide">
+              New
+            </span>
+          </div>
+        )}
+        {product.sale_discount > 0 && (
+          <div className="flex flex-col gap-2">
+            <span className="bg-red-500 text-white text-[10px] font-bold px-2 py-1 rounded-sm uppercase tracking-wide">
+              Sale {product.sale_discount}%
+            </span>
+          </div>
+        )}
+      </div>
 
       {/* Save Button */}
       <button className="cursor-pointer absolute top-3 right-3 z-10 w-8 h-8 bg-white/80 backdrop-blur-md rounded-full flex items-center justify-center text-slate-400 hover:text-red-500 hover:bg-white shadow-sm transition-all">

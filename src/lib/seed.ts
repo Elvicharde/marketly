@@ -46,7 +46,7 @@ export const PRODUCTS: IProduct[] = [
     description:
       "Compact design with spatial audio support and water resistance for active lifestyles.",
     color: "White",
-    isNew: false,
+    isNew: true,
     sale_discount: 20,
   },
   {
